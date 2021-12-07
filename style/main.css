@@ -1,1 +1,60 @@
 
+header {
+  height: 100vh;
+}
+/* Navigation START */
+nav {
+  margin: 0 auto;
+  height: 100px;
+  
+}
+
+.logo {
+  width: 70px;
+} 
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin: 0 5px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #1B5BF7;
+}
+
+nav.main-nav ul li a {
+  position: relative;
+}
+nav.main-nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #1B5BF7;
+  height: 1px;
+}
+nav.main-nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* Navigation END */
+

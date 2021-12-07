@@ -6,10 +6,10 @@
 
 body {
   font-family: "Manrope", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F7F8FC;
 }
 
 .container {
@@ -56,45 +56,30 @@ body {
   display: none !important;
 }
 
-@media (min-width: 768px) {
-  .col-sm-quarter {
-    width: 25%;
-  }
-  .col-sm-third {
-    width: 33.33333333%;
-  }
-  .col-sm-half {
-    width: 50%;
-  }
-  .col-sm-full {
-    width: 100%;
-  }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
 }
-@media (min-width: 992px) {
-  .col-md-quarter {
-    width: 25%;
-  }
-  .col-md-third {
-    width: 33.33333333%;
-  }
-  .col-md-half {
-    width: 50%;
-  }
-  .col-md-full {
-    width: 100%;
-  }
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
-@media (min-width: 1200px) {
-  .col-lg-quarter {
-    width: 25%;
-  }
-  .col-lg-third {
-    width: 33.33333333%;
-  }
-  .col-lg-half {
-    width: 50%;
-  }
-  .col-lg-full {
-    width: 100%;
-  }
+
+.col-quarter {
+  width: 25%;
+}
+
+.col-third {
+  width: 33.33%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
 }
