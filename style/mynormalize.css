@@ -10,6 +10,7 @@ body {
   line-height: 1.5;
   color: #333333;
   background-color: #F7F8FC;
+  margin: 0;
 }
 
 .container {
@@ -34,11 +35,6 @@ body {
   }
 }
 
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 .container:before,
 .container:after,
 .row:before,
@@ -56,16 +52,15 @@ body {
   display: none !important;
 }
 
-
 .img-fluid {
   max-width: 100%;
   height: auto;
-  display: inline-block;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  margin: 5rem 0;
 }
 
 .col-quarter {
@@ -78,8 +73,18 @@ body {
 
 .col-half {
   width: 50%;
+  padding: 2%;
 }
 
 .col-full {
   width: 100%;
+}
+
+.align-flex-center {
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  
 }

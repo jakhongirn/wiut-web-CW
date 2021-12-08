@@ -1,17 +1,18 @@
-
 header {
   height: 100vh;
 }
 /* Navigation START */
 nav {
   margin: 0 auto;
-  height: 100px;
-  
 }
 
 .logo {
   width: 70px;
-} 
+}
+
+.border-bottom {
+  border-bottom: 1px solid #000;
+}
 
 nav ul {
   list-style: none;
@@ -31,10 +32,10 @@ nav ul li a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: #1B5BF7;
+  color: #1b5bf7;
 }
 
 nav.main-nav ul li a {
@@ -47,14 +48,19 @@ nav.main-nav ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
-  background: #1B5BF7;
+  background: #1b5bf7;
   height: 1px;
 }
 nav.main-nav ul li a:hover:after {
   width: 100%;
 }
 
-/* Navigation END */
+/************ Navigation END *************/
 
+
+/************ Hero Part START *************/
+.large-text {
+  font-size: 4rem;
+}
