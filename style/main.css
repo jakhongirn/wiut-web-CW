@@ -64,3 +64,7 @@ nav.main-nav ul li a:hover:after {
 .large-text {
   font-size: 4rem;
 }
+
+.features {
+  color: #1b5bf7;
+}
