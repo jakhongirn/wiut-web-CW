@@ -1,5 +1,6 @@
 header {
   height: 100vh;
+  background-image: url("/images/details-2-background.jpg")
 }
 /* Navigation START */
 nav {
@@ -11,7 +12,7 @@ nav {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #2E2D4B;
 }
 
 nav ul {
@@ -26,22 +27,22 @@ nav ul li a {
   padding: 5px 10px;
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0 5px;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+nav ul li .nav-link,
+nav ul li .nav-link:after,
+nav ul li .nav-link:before {
   transition: all 0.5s;
 }
-nav ul li a:hover {
+nav ul li .nav-link:hover {
   color: #1b5bf7;
 }
 
-nav.main-nav ul li a {
+nav.main-nav ul li .nav-link {
   position: relative;
 }
-nav.main-nav ul li a:after {
+nav.main-nav ul li .nav-link:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -53,7 +54,7 @@ nav.main-nav ul li a:after {
   background: #1b5bf7;
   height: 1px;
 }
-nav.main-nav ul li a:hover:after {
+nav.main-nav ul li .nav-link:hover:after {
   width: 100%;
 }
 
@@ -62,9 +63,51 @@ nav.main-nav ul li a:hover:after {
 
 /************ Hero Part START *************/
 .large-text {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  color: var(--blue);
 }
 
 .features {
   color: #1b5bf7;
+}
+
+/* Hero Part END */
+/* Service Section START */
+
+.service-col {
+  background-color: #F4F7FF;
+  margin-right: 30px;
+  margin-bottom: 24px;
+  padding: 32px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 0.75s;
+}
+.service-col:hover {
+  box-shadow: none;
+}
+
+/* Service Section END */
+
+.btn-contact {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.btn-contact:hover {
+  transform: scale(1.05) translateY(.125rem);
+  color: #fff;
+}
+
+.btn-contact-lg {
+  font-size: rem;
+  padding: 0.5rem 2rem;
 }
