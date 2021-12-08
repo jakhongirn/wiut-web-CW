@@ -111,3 +111,79 @@ nav.main-nav ul li .nav-link:hover:after {
   font-size: rem;
   padding: 0.5rem 2rem;
 }
+
+
+/* Clients START */
+
+.clients-row div {
+  width: 100%;
+    box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    margin-top: 10px;
+    border-radius: 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    transition: all .4s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+ }
+  100% {
+    transform: translateX(calc(-125px * 12));
+ }
+ 
+}
+@keyframes scroll-2 {
+  100% {
+    transform: translateX(0);
+ }
+  0% {
+    transform: translateX(calc(-125px * 12));
+ }
+  
+}
+.slider {
+  background: white;
+  height: 100px;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+.slider .slide-track-2 {
+  animation: scroll-2 40s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  
+}
+
+/* Clients END */
