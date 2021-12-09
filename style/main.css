@@ -1,5 +1,4 @@
 header {
-  height: 100vh;
   background-image: url("/images/details-2-background.jpg")
 }
 /* Navigation START */
@@ -85,6 +84,7 @@ nav.main-nav ul li .nav-link:hover:after {
   font-weight: 700;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: all 0.75s;
+  max-width: 100%;
 }
 .service-col:hover {
   box-shadow: none;
@@ -95,6 +95,7 @@ nav.main-nav ul li .nav-link:hover:after {
 .btn-contact {
   background-color: var(--primary);
   color: #fff;
+  border: 1px solid var(--primary);
   border-radius: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 500;

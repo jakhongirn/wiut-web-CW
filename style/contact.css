@@ -1,9 +1,39 @@
 .contact {
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 
-.contact div {
+.contact form {
     padding: 2rem 3rem;
 }
 
+.form-control {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  border: 1px solid #333
+}
+textarea {
+  resize: none;
+}
+
+.contact ul {
+  list-style: none;
+}
+.contact  ul li {
+  margin: 2rem 0;
+}
+.contact  ul li img {
+  margin-right: 1rem;
+}
+.submit {
+  font-size: 1.125rem;
+  
+}
+
+.col-half h3 {
+  margin-left: 3rem;
+}

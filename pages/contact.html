@@ -46,16 +46,28 @@
         <div class="container contact">
           <form action="">
             <div class="row">
+              <h1>Leave us message</h1>
+            </div>
+            <div class="row">
               <div class="col-half">
-                <h1>Leave us message</h3>
-
-                <input type="text" value="Name" class="form-control">
-                
-
-              </div>
-              <div class="col-half"></div>
+                <input type="text" placeholder="Your Name" class="form-control">
+                <input type="email" placeholder="Your Email" class="form-control">
+                <textarea name="" id=""  rows="5"  class="form-control" placeholder="Briefly describe your project"></textarea>
+                <input type="submit" value="Send" class="btn-contact btn-contact-lg submit">
+            </div>
+            <div class="col-half"> 
+              <h3>Get in touch</h3>
+              <ul>
+                <li><img src="/images/address.svg" alt=""> 12 Istikbol Street, Tashkent 100047</li>
+                <li><img src="/images/phone.svg" alt=""> +998 90 123 45 67</li>
+                <li><img src="/images/message.svg" alt=""> info@ezdevs.com</li>
+              </ul>
+            </div>
             </div>
           </form>
+          <div class="row">
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+          </div>
         </div>
       </section>
 
@@ -165,7 +177,19 @@
         src="https://kit.fontawesome.com/15a236f592.js"
         crossorigin="anonymous"
       ></script>
-      <script src="js/index.js"></script>
+      <script>
+        function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+
+      </script>
+      
+      <script src="/js/index.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_C9tEzK_XiFThRCJsHNlowg5Ff0QtqEE&callback=myMap"></script>
     </body>
   </html>
   

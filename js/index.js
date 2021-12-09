@@ -79,3 +79,5 @@ counters.forEach( counter => {
    
    animate();
 });
+
+
