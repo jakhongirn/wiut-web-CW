@@ -58,27 +58,31 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-
 // Number animation
-const counters = document.querySelectorAll('.value');
+const counters = document.querySelectorAll(".value");
 const speed = 300;
 
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('data');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        }else{
-          counter.innerText = value;
-        }
-     
-   }
-   
-   animate();
+counters.forEach((counter) => {
+  const animate = () => {
+    const value = +counter.getAttribute("data");
+    const data = +counter.innerText;
+
+    const time = value / speed;
+    if (data < value) {
+      counter.innerText = Math.ceil(data + time);
+      setTimeout(animate, 1);
+    } else {
+      counter.innerText = value;
+    }
+  };
+
+  animate();
 });
 
-
+function myMap() {
+  var mapProp = {
+    center: new google.maps.LatLng(51.508742, -0.12085),
+    zoom: 5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
