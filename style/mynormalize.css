@@ -2,8 +2,8 @@
 
 :root {
   --primary: #1b5bf7;
-  --secondary: #4ebe9e;
   --bg-primary: #f4f7ff;
+  --black: #333;
 }
 * {
   box-sizing: border-box;
