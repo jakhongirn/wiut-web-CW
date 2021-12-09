@@ -1,4 +1,4 @@
-Animating
+// Typing animation
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -59,7 +59,7 @@ window.onload = function () {
 };
 
 
-
+// Number animation
 const counters = document.querySelectorAll('.value');
 const speed = 300;
 
