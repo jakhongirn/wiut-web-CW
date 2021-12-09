@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary: #1B5BF7;
-  --secondary: #4EBE9E;
-  --bg-primary: #F4F7FF;
+  --primary: #1b5bf7;
+  --secondary: #4ebe9e;
+  --bg-primary: #f4f7ff;
 }
 * {
   box-sizing: border-box;
 }
 html {
-
   font-size: 112.5%;
 }
 
@@ -29,7 +28,6 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 .container:before,
 .container:after,
@@ -58,7 +56,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.col-sixth{
+.col-sixth {
   width: 16.66%;
 }
 .col-fifth {
@@ -75,9 +73,7 @@ body {
 
 .col-half {
   width: 50%;
-  
 }
-
 
 .col-full {
   width: 100%;
@@ -91,7 +87,6 @@ body {
 }
 h1 {
   font-size: 2rem;
-  
 }
 section {
   margin: 5rem 0;
@@ -117,27 +112,26 @@ section {
   .container {
     width: 750px;
   }
-.row {
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  header {
+    height: 100%;
+  }
+  .col-half {
+    width: 100%;
+    justify-content: center;
+  }
+  .img-fluid {
+    width: 50%;
+  }
+  .col-third {
+    width: 100%;
+  }
 }
-header {
-  height: 100%;
-}
-.col-half{
-  width: 100%;
-  justify-content: center;
-} 
-.img-fluid {
-  width: 50%;
-}
-.col-third {
-  width: 100%;
-}
-  
-}
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px;
   }
@@ -156,4 +150,3 @@ header {
     width: 1170px;
   }
 }
-

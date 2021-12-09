@@ -1,11 +1,10 @@
 .contact {
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
 }
 
 .contact form {
-    padding: 2rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .form-control {
@@ -14,7 +13,7 @@
   margin: 10px 0;
   font-size: 1.125rem;
   border-radius: 5px;
-  border: 1px solid #333
+  border: 1px solid #333;
 }
 textarea {
   resize: none;
@@ -23,15 +22,14 @@ textarea {
 .contact ul {
   list-style: none;
 }
-.contact  ul li {
+.contact ul li {
   margin: 2rem 0;
 }
-.contact  ul li img {
+.contact ul li img {
   margin-right: 1rem;
 }
 .submit {
   font-size: 1.125rem;
-  
 }
 
 .col-half h3 {

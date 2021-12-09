@@ -1,5 +1,5 @@
 header {
-  background-image: url("/images/details-2-background.jpg")
+  background-image: url("/images/details-2-background.jpg");
 }
 /* Navigation START */
 nav {
@@ -59,7 +59,6 @@ nav.main-nav ul li .nav-link:hover:after {
 
 /************ Navigation END *************/
 
-
 /************ Hero Part START *************/
 .large-text {
   font-size: 3.5rem;
@@ -104,7 +103,7 @@ nav.main-nav ul li .nav-link:hover:after {
 }
 
 .btn-contact:hover {
-  transform: scale(1.05) translateY(.125rem);
+  transform: scale(1.05) translateY(0.125rem);
   color: #fff;
 }
 
@@ -113,38 +112,35 @@ nav.main-nav ul li .nav-link:hover:after {
   padding: 0.5rem 2rem;
 }
 
-
 /* Clients START */
 
 .clients-row div {
   width: 100%;
-    box-shadow: 0 0 8px rgb(0 0 0 / 15%);
-    margin-top: 10px;
-    border-radius: 24px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-    transition: all .4s ease-in-out;
+  box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+  margin-top: 10px;
+  border-radius: 24px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  transition: all 0.4s ease-in-out;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
- }
+  }
   100% {
     transform: translateX(calc(-125px * 12));
- }
- 
+  }
 }
 @keyframes scroll-2 {
   100% {
     transform: translateX(0);
- }
+  }
   0% {
     transform: translateX(calc(-125px * 12));
- }
-  
+  }
 }
 .slider {
   background: white;
@@ -152,10 +148,14 @@ nav.main-nav ul li .nav-link:hover:after {
   margin: 2rem auto;
   overflow: hidden;
   position: relative;
-  
 }
-.slider::before, .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   content: "";
   height: 100px;
   position: absolute;
@@ -184,7 +184,6 @@ nav.main-nav ul li .nav-link:hover:after {
 .slider .slide {
   height: 100px;
   width: 250px;
-  
 }
 
 /* Clients END */
@@ -233,7 +232,7 @@ footer {
   text-align: center;
 }
 .social-button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -1px;
   left: 50%;
@@ -243,15 +242,18 @@ footer {
   border-radius: 100%;
   transition: 0.3s;
 }
-.social-button:focus, .social-button:hover {
+.social-button:focus,
+.social-button:hover {
   color: #fff;
 }
-.social-button:focus::after, .social-button:hover::after {
+.social-button:focus::after,
+.social-button:hover::after {
   width: calc(100% + 2px);
   height: calc(100% + 2px);
   margin-left: calc(-50% - 1px);
 }
-.social-button i, .social-button svg {
+.social-button i,
+.social-button svg {
   position: relative;
   z-index: 1;
   transition: 0.3s;
@@ -319,7 +321,6 @@ footer {
   background: #c12127;
 }
 
-
 footer ul {
   list-style: none;
   margin: 0;
@@ -333,7 +334,6 @@ footer.col-third {
 footer ul li a {
   text-decoration: none;
   color: var(--primary);
-  
 }
 
 footer ul li a:hover {
@@ -341,5 +341,5 @@ footer ul li a:hover {
 }
 
 .copyright {
-  font-size: 0.75rem
+  font-size: 0.75rem;
 }

@@ -1,37 +1,37 @@
 .content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: var(--primary);
-    color: #fff;
-  }
-  
-  .value {
-    font-size: 5rem;
-    display: block;
-    font-weight: bold;
-    color: #fff;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--primary);
+  color: #fff;
+}
+
+.value {
+  font-size: 5rem;
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
 .service-title {
-    padding-right: 20%;
+  padding-right: 20%;
 }
 .service-left-title {
-    padding-right: 10%;
+  padding-right: 10%;
 }
 .service-right-title {
-    padding-left: 10%;
+  padding-left: 10%;
 }
 
 .language-icons img {
-    height: 50px;
+  height: 50px;
 }
 .platform-icons div {
-    background-color:var(--bg-primary);
-    margin-top: 0.75rem;
-    margin-right: 0.75rem;
-    padding: 0.5rem;
-    border-radius: 10px;
+  background-color: var(--bg-primary);
+  margin-top: 0.75rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
