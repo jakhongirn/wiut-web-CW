@@ -97,7 +97,9 @@ body {
 .align-flex-center {
   align-items: center;
 }
-
+.align-flex-end {
+  align-items: flex-end;
+}
 h1 {
   font-size: 2rem;
   
