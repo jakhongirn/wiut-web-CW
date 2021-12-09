@@ -36,7 +36,7 @@ nav ul li .nav-link:before {
   transition: all 0.5s;
 }
 nav ul li .nav-link:hover {
-  color: #1b5bf7;
+  color: var(--primary);
 }
 
 nav.main-nav ul li .nav-link {
@@ -51,7 +51,7 @@ nav.main-nav ul li .nav-link:after {
   width: 0%;
   content: ".";
   color: transparent;
-  background: #1b5bf7;
+  background: var(--primary);
   height: 1px;
 }
 nav.main-nav ul li .nav-link:hover:after {
@@ -64,18 +64,18 @@ nav.main-nav ul li .nav-link:hover:after {
 /************ Hero Part START *************/
 .large-text {
   font-size: 3.5rem;
-  color: var(--blue);
+  color: var(--primary);
 }
 
 .features {
-  color: #1b5bf7;
+  color: var(--primary);
 }
 
 /* Hero Part END */
 /* Service Section START */
 
 .service-col {
-  background-color: #F4F7FF;
+  background-color: var(--bg-primary);
   margin-right: 30px;
   margin-bottom: 24px;
   padding: 32px;
@@ -93,7 +93,7 @@ nav.main-nav ul li .nav-link:hover:after {
 /* Service Section END */
 
 .btn-contact {
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: #fff;
   border-radius: 10px;
   font-family: "Manrope", sans-serif;
@@ -187,3 +187,154 @@ nav.main-nav ul li .nav-link:hover:after {
 }
 
 /* Clients END */
+
+/* How we Work START */
+.justify-content-center .col-fifth {
+  text-align: center;
+}
+
+/* How we Work END */
+
+.interested {
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 5rem;
+}
+
+/* Footer START */
+
+footer {
+  background-color: var(--bg-primary);
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.social-button i, .social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--mail::after {
+  background: #0072c6;
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--facebook::after {
+  background: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--github::after {
+  background: #6e5494;
+}
+.social-button--twitter {
+  color: #0072c6;
+}
+.social-button--twitter::after {
+  background: #0072c6;
+}
+
+.social-button--instagram {
+  color: #c12127;
+}
+.social-button--instagram::after {
+  background: #c12127;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--twitter::after {
+  background: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--instagram::after {
+  background: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+.social-button--npmjs::after {
+  background: #c12127;
+}
+
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+footer.col-third {
+  justify-content: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
