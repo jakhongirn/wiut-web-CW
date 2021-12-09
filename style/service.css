@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary);
+    color: #fff;
+  }
+  
+  .value {
+    font-size: 5rem;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+  }
+
+.service-title {
+    padding-right: 15%;
+}
+.language-icons img {
+    height: 50px;
+}
+.platform-icons div {
+    background-color:var(--bg-primary);
+    margin-right: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}

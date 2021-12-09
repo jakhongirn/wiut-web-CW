@@ -56,3 +56,26 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #1b5bf7 }";
   document.body.appendChild(css);
 };
+
+
+
+const counters = document.querySelectorAll('.value');
+const speed = 300;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('data');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        }else{
+          counter.innerText = value;
+        }
+     
+   }
+   
+   animate();
+});

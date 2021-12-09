@@ -12,7 +12,7 @@ nav {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #2E2D4B;
+  border-bottom: 1px solid #b7b7c0;
 }
 
 nav ul {
@@ -337,4 +337,8 @@ footer ul li a {
 
 footer ul li a:hover {
   text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.75rem
 }
